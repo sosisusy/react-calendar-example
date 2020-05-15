@@ -14,10 +14,9 @@ class Index extends React.Component {
         }
     }
 
-
+    // 월 변경
     handleChangeDate(type) {
         let increment
-        console.log(type)
 
         switch (type) {
             case "prev":
@@ -38,6 +37,7 @@ class Index extends React.Component {
         })
     }
 
+    // 날짜 클릭
     handleDateClick(d) {
         const { date } = this.state
 
@@ -46,8 +46,6 @@ class Index extends React.Component {
 
         if (this.props.onClick)
             this.props.onClick(newDate)
-
-        console.log(newDate)
     }
 
     render() {
