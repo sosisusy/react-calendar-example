@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import TwCalendar from "./components/TwCalendar/Index"
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TwCalendar />
   </React.StrictMode>,
   document.getElementById('root')
 );
